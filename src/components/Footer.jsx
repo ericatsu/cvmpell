@@ -1,83 +1,120 @@
-import { FooterContainer, FooterWrap, FooterLinksContainer,
-FooterLinksWrapper, FooterLinkItems, FooterLinkTitle,
-FooterLink, SocialMedia, SocialIcons, SocialMediaWrap,
-SocialLogo, WebsiteRights, SocialIconLink } from '../elements/FooterElements';
-import { FaLinkedin, FaTwitter, FaYoutube, FaInstagram, FaGithub} from 'react-icons/fa';
-import { animateScroll as scroll } from 'react-scroll';
-const Footer = () => {
+import React from "react";
+import "../elements/Footer.css";
+import { Button } from "../components/Button";
+import { Link } from "react-router-dom";
 
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
-
-    return (
-        <FooterContainer>
-        <FooterWrap>
-        <FooterLinksContainer> 
-            <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Me</FooterLinkTitle>
-                            <FooterLink to="/HireMe">How I Work</FooterLink>
-                            <FooterLink to="/HireMe">Testimonals</FooterLink>
-                            <FooterLink to="/HireMe">Resume</FooterLink>
-                            <FooterLink to="/HireMe">Partners</FooterLink>
-                            <FooterLink to="/HireMe">Terms of Services</FooterLink>                        
-                            </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Support</FooterLinkTitle>
-                            <FooterLink to="/HireMe">Support Request</FooterLink>
-                            <FooterLink to="/HireMe">Contact</FooterLink>
-                            <FooterLink to="https://paypal.me/eric380418?locale.x=en_US">PayPal</FooterLink>
-                        </FooterLinkItems>
-            </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Contact Me</FooterLinkTitle>
-                            <FooterLink to="https://wa.me/0570448184">WhatsApp</FooterLink>
-                            <FooterLink to="https://t.me/les_ter">Telegram</FooterLink>
-                            <FooterLink to="/">Mail</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Social Media</FooterLinkTitle>
-                            <FooterLink to="https://www.linkedin.com/in/eric-atsu-4065681b4/">LinkedIn</FooterLink>
-                            <FooterLink to="https://github.com/ericatsu">GitHub</FooterLink>
-                            <FooterLink to="//www.twitter.com/1LeS_Ter">Twitter</FooterLink>
-                            <FooterLink to="//www.youtube.com/channel/UCZvhEk5BETiadTJY4CdxIIQ">YouTube</FooterLink>
-                            <FooterLink to="https://www.instagram.com/1les_ter/">Instagram</FooterLink>
-                            <FooterLink to="/">Twitch</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-        </FooterLinksContainer>
-        <SocialMedia>
-            <SocialMediaWrap>
-                <SocialLogo to='/' onClick={toggleHome}>
-                    lester
-                </SocialLogo>
-                <WebsiteRights>lester © {new Date().getFullYear()}
-                
-                  All Rights Reserved.</WebsiteRights>
-                <SocialIcons>
-                        <SocialIconLink href='//www.linkedin.com/in/eric-atsu-4065681b4/' target="_blank" aria-label="LinkedIn">
-                      <FaLinkedin />
-                  </SocialIconLink>
-                        <SocialIconLink href='//www.github.com/ericatsu' target="_blank" aria-label="GitHub">
-                      <FaGithub />
-                  </SocialIconLink>
-                        <SocialIconLink href='//www.twitter.com/1LeS_Ter' target="_blank" aria-label="Twitter">
-                      <FaTwitter />
-                  </SocialIconLink>
-                        <SocialIconLink href='//www.youtube.com/channel/UCZvhEk5BETiadTJY4CdxIIQ' target="_blank" aria-label="YouTube">
-                      <FaYoutube />
-                  </SocialIconLink>
-                        <SocialIconLink href='https://t.co/GpR3XOwvMC?amp=1' target="_blank" aria-label="Instagram">
-                      <FaInstagram />
-                  </SocialIconLink>
-                </SocialIcons>
-            </SocialMediaWrap>
-        </SocialMedia>
-        </FooterWrap>
-        </FooterContainer>
-    )
+function Footer() {
+  return (
+    <div className="footer-container">
+      <section className="footer-subscription">
+        <p className="footer-subscription-heading">
+          Join the Adventure newsletter to receive our best vacation deals
+        </p>
+        <p className="footer-subscription-text">
+          You can unsubscribe at any time.
+        </p>
+        <div className="input-areas">
+          <form>
+            <input
+              className="footer-input"
+              name="email"
+              type="email"
+              placeholder="Your Email"
+            />
+            <Button buttonStyle="btn--outline">Subscribe</Button>
+          </form>
+        </div>
+      </section>
+      <div class="footer-links">
+        <div className="footer-link-wrapper">
+          <div class="footer-link-items">
+            <h2>About Us</h2>
+            <Link to="/sign-up">How it works</Link>
+            <Link to="/">Testimonials</Link>
+            <Link to="/">Careers</Link>
+            <Link to="/">Investors</Link>
+            <Link to="/">Terms of Service</Link>
+          </div>
+          <div class="footer-link-items">
+            <h2>Contact Us</h2>
+            <Link to="/">Contact</Link>
+            <Link to="/">Support</Link>
+            <Link to="/">Destinations</Link>
+            <Link to="/">Sponsorships</Link>
+          </div>
+        </div>
+        <div className="footer-link-wrapper">
+          <div class="footer-link-items">
+            <h2>Videos</h2>
+            <Link to="/">Submit Video</Link>
+            <Link to="/">Ambassadors</Link>
+            <Link to="/">Agency</Link>
+            <Link to="/">Influencer</Link>
+          </div>
+          <div class="footer-link-items">
+            <h2>Social Media</h2>
+            <Link to="/">Instagram</Link>
+            <Link to="/">Facebook</Link>
+            <Link to="/">Youtube</Link>
+            <Link to="/">Twitter</Link>
+          </div>
+        </div>
+      </div>
+      <section class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <Link to="/" className="social-logo">
+              TRVL
+              <i class="fab fa-typo3" />
+            </Link>
+          </div>
+          <small class="website-rights">TRVL © 2020</small>
+          <div class="social-icons">
+            <Link
+              class="social-icon-link facebook"
+              to="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f" />
+            </Link>
+            <Link
+              class="social-icon-link instagram"
+              to="/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram" />
+            </Link>
+            <Link
+              class="social-icon-link youtube"
+              to="/"
+              target="_blank"
+              aria-label="Youtube"
+            >
+              <i class="fab fa-youtube" />
+            </Link>
+            <Link
+              class="social-icon-link twitter"
+              to="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter" />
+            </Link>
+            <Link
+              class="social-icon-link twitter"
+              to="/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin" />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
