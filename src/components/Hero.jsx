@@ -24,9 +24,9 @@ const Hero = () => {
                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='HireMe' onMouseEnter={onHover} onMouseLeave={onHover}
-                        primary='true' dark='true' smooth={true}
-                        duration={500} spy={true}
+                    <Button to='AboutUs' onMouseEnter={onHover} onMouseLeave={onHover}
+                        primary='true' dark='true'
+                        duration={500}
                         exact='true' offset={-80}
                     >
                         Contact {hover ? <ArrowForward/> : <ArrowRight/>}

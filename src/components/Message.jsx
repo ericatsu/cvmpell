@@ -1,28 +1,29 @@
 import React from "react";
-import { Description, Highlight, Item, ItemWrap, MainCon, MainDiv, MessageIcon, SubTitle, Title, TopDiv } from "../elements/MessageElement";
+import { Description, Highlight, Item, ItemWrap, MainCon, MainDiv, MessageIcon, MsBtnWrap, SubTitle, Title, TopDiv } from "../elements/MessageElement";
 //import Card from "./Card";
 import "../elements/Message.css"
 import { Button } from "../elements/ButtonElements";
+import { FaApple } from "react-icons/fa";
 
-const Message = ({ primary, dark, dark2 }) => {
+const Message = () => {
   const messageData = [
     {
-      icon: "ri-html5-fill",
+      icon: <FaApple color="black" fontSize="2.5rem" />,
       title: "Some Title",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. qui libero dolorem modi architecto adipisci sed nihil voluptate",
     },
     {
-      icon: "ri-html5-fill",
+      icon: <FaApple color="black" fontSize="2.5rem" />,
       title: "Some Title",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. qui libero dolorem modi architecto adipisci sed nihil voluptate",
     },
     {
-      icon: "ri-html5-fill",
+      icon: <FaApple color="black" fontSize="2.5rem" />,
       title: "Some Title",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. qui libero dolorem modi architecto adipisci sed nihil voluptate",
     },
     {
-      icon: "ri-html5-fill",
+      icon: <FaApple color="black" fontSize="2.5rem" />,
       title: "Some Title",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. qui libero dolorem modi architecto adipisci sed nihil voluptate",
     },
@@ -42,22 +43,21 @@ const Message = ({ primary, dark, dark2 }) => {
         <ItemWrap>
           {messageData.map((item, index) => (
             <Item key={index}>
-              <MessageIcon>
-                <i class={item.icon}></i>
-              </MessageIcon>
+              <MessageIcon>{item.icon}</MessageIcon>
               <Title>{item.title}</Title>
               <Description>{item.desc}</Description>
-              <Button
-                to="About"
-                duration={500}
-                exact="true"
-                offset={-80}
-                primary={primary ? 1 : 0}
-                dark={dark ? 1 : 0}
-                dark2={dark2 ? 1 : 0}
-              >
-                Learn More
-              </Button>
+              <MsBtnWrap>
+                <Button
+                  to="AboutUs"
+                  duration={500}
+                  exact="true"
+                  offset={-80}
+                  primary="true"
+                  dark="true"
+                >
+                  Learn More
+                </Button>
+              </MsBtnWrap>
             </Item>
           ))}
         </ItemWrap>

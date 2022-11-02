@@ -30,15 +30,16 @@ export const NavBarContainter = styled.div`
 `
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
-    justify-self: flex-start;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    margin-left: 24px;
-    font-weight: bold;
-    text-decoration: none;
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -94,6 +95,7 @@ export const NavResume = styled(LinkR)`
    padding: 0 1rem;
    height: 100%;
    cursor: pointer;
+   font-size: 1.3rem;
 
    &.active{
      border-bottom: 3px solid #F5C32C;

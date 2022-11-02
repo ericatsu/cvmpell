@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const MainDiv = styled.section`
   padding: 60px;
+  background-color: #788097;
 `;
 
 export const MainCon = styled.div`
@@ -14,18 +15,16 @@ export const MainCon = styled.div`
 export const TopDiv = styled.div`
   text-align: center;
   margin-bottom: 40px;
-
 `;
 
-export const SubTitle = styled.h6`
-  font-size: 1rem;
-  color: black;
-  font-weight: 400;
-  margin-bottom: 20px;
-`
-
-export const Highlight = styled.h2`
+export const SubTitle = styled.h2`
   font-size: 2rem;
+  color: black;
+  margin-bottom: 20px;
+`;
+
+export const Highlight = styled.h6`
+  font-size: 1.5rem;
 
   @media screen and (max-width: 992px) {
     font-size: 1.5rem;
@@ -44,7 +43,7 @@ export const ItemWrap = styled.div`
 `
 
 export const Item = styled.div`
-  background: green;
+  background: linear-gradient(#ffd89b, #19547b);
   width: 25%;
   padding: 30px 15px;
   text-align: center;
@@ -62,16 +61,17 @@ export const Item = styled.div`
 
   @media screen and (max-width: 576px) {
     width: 100%;
-    
   }
 `;
 
+export const MsBtnWrap = styled.div`
+  padding: 10px;
+`
 export const MessageIcon = styled.span`
   width: 60px;
   height: 60px;
   display: flex;
   margin: auto;
-  background: white;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
@@ -80,7 +80,7 @@ export const MessageIcon = styled.span`
 
 
 export const Title = styled.h3`
-  color: pink;
+  color: black;
   font-style: 2rem;
 
   @media screen and (max-width: 768px) {
@@ -89,7 +89,7 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
-   color: yellow;
+   color: black;
    line-height: 30px;
    font-size: .9rem;
 `;

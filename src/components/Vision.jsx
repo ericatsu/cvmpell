@@ -1,25 +1,26 @@
 import { Description } from "../elements/MessageElement";
 import { VContainer, VContent, VDescription, VDImg, Vh2, VIcons, VImg, VItem, VItemWrapper, VSection, VSubTitle, VTitle, VWrapper } from "../elements/VisionElement";
 import genders from '../assets/images/genders.jpg';
+import { FaApple } from "react-icons/fa";
 
 const visionData = [
   {
-    icon: "ri-html5-fill",
+    icon: <FaApple color="black" fontSize="2.5rem" />,
     title: "Lorem, ipsum dolor.",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem hic ipsam, deserunt ipsa dolore magni!",
   },
   {
-    icon: "ri-html5-fill",
+    icon: <FaApple color="black" fontSize="2.5rem" />,
     title: "Lorem, ipsum dolor.",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem hic ipsam, deserunt ipsa dolore magni!",
   },
   {
-    icon: "ri-html5-fill",
+    icon: <FaApple color="black" fontSize="2.5rem" />,
     title: "Lorem, ipsum dolor.",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem hic ipsam, deserunt ipsa dolore magni!",
   },
   {
-    icon: "ri-html5-fill",
+    icon: <FaApple color="black" fontSize="2.5rem" />,
     title: "Lorem, ipsum dolor.",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem hic ipsam, deserunt ipsa dolore magni!",
   },
@@ -31,7 +32,9 @@ const Vision = () => {
           <VWrapper>
             <VContent>
               <VSubTitle>Our Inspiration</VSubTitle>
-              <Vh2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Vh2>
+              <Vh2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </Vh2>
               <VDescription>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Provident, nulla. Ut harum nobis corrupti cumque?
@@ -39,9 +42,7 @@ const Vision = () => {
               <VItemWrapper>
                 {visionData.map((item, index) => (
                   <VItem key={index}>
-                    <VIcons>
-                      <i className={item.icon}></i>
-                    </VIcons>
+                    <VIcons>{item.icon}</VIcons>
                     <div>
                       <VTitle>{item.title}</VTitle>
                       <Description>{item.desc}</Description>

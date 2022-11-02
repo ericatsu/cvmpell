@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const VSection = styled.section`
   padding: 60px;
-`
+  background-color: #788097;
+`;
 export const VContainer = styled.div`
   padding: 0px 15px;
   //width: 1140px;
@@ -25,8 +26,8 @@ export const VContent = styled.div`
     margin-bottom: 30px;
   }
 `
-export const VSubTitle = styled.h6`
-  font-size: 1rem;
+export const VSubTitle = styled.h2`
+  font-size: 1.5rem;
   color: black;
   font-weight: 400;
   margin-bottom: 20px;
@@ -36,8 +37,8 @@ export const VSubTitle = styled.h6`
   }
 `;
 
-export const Vh2 = styled.h2`
-  font-size: 2rem;
+export const Vh2 = styled.h6`
+  font-size: 1.8rem;
 
   @media screen and (max-width: 992px) {
     font-size: 1.5rem;
@@ -46,7 +47,7 @@ export const Vh2 = styled.h2`
 `;
 
 export const VDescription = styled.p`
-  color: yellow;
+  color: black;
   line-height: 30px;
   font-size: 0.9rem;
   margin-top: 30px;
@@ -64,18 +65,16 @@ export const VItem = styled.div`
 `
 
 export const VIcons = styled.span`
-  width: 50px;
+  width: 60px;
   height: 60px;
-  padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
+  border: 1px solid black;
   border-radius: 5px;
-    
 `
 export const VTitle = styled.h4`
-  color: green;
+  color: white;
   font-weight: 500;
 `
 
@@ -89,7 +88,7 @@ export const VDImg = styled.div`
 
 export const VImg = styled.img`
   width: 500px;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
 
   border-radius: 0.8rem;
