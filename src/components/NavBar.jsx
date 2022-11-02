@@ -24,51 +24,76 @@ const NavBar = ( {toggle} ) => {
         scroll.scrollToTop();
     }
 
-    return(
-     <>
-    <IconContext.Provider value={{color: '#ffff'}}>
-     <Nav scrollNav={scrollNav}>
-        <NavBarContainter> 
-        <NavLogo to="/" onClick={toggleHome}>
-           Cvmpell
-            </NavLogo>
-        <MobileIcon onClick={toggle}>
-            <FaBars />
-        </MobileIcon >
-        <NavMenu>
-            <NavItem>
-                <NavLinks to="About" smooth={true}
-                duration={500} spy={true}
-                exact='true' offset={-80}>About Us</NavLinks>
-            </NavItem>
-            <NavItem>
-                <NavLinks to="Skills" smooth={true}
-                duration={500} spy={true}
-                exact='true' offset={-80}>Skills</NavLinks>
-            </NavItem>
-            <NavItem>
-                <NavLinks to="Services" smooth={true}
-                duration={500} spy={true}
-                exact='true' offset={-80}>Services</NavLinks>
-            </NavItem>
-            <NavItem>
-                <NavLinks to="Works" smooth={true}
-                duration={500} spy={true}
-                exact='true' offset={-80}>Support</NavLinks>
-            </NavItem>
-            <NavItem>
-                <NavResume to="Resume" smooth={true}
-                duration={500} spy={true}
-                exact='true' offset={-80}>Partner</NavResume>
-            </NavItem>
-         <NavBtn>
-             <NavBtnLink to='HireMe'>Contact</NavBtnLink>
-         </NavBtn>
-         </NavMenu>
-        </NavBarContainter>
-     </Nav>
-</IconContext.Provider>
-     </>
+    return (
+      <>
+        <IconContext.Provider value={{ color: "#ffff" }}>
+          <Nav scrollNav={scrollNav}>
+            <NavBarContainter>
+              <NavLogo to="/" onClick={toggleHome}>
+                Cvmpell
+              </NavLogo>
+              <MobileIcon onClick={toggle}>
+                <FaBars />
+              </MobileIcon>
+              <NavMenu>
+                <NavItem>
+                  <NavResume
+                    to="Resume"
+                    duration={500}
+                    exact="true"
+                    offset={-80}
+                  >
+                    About Us
+                  </NavResume>
+                </NavItem>
+                <NavItem>
+                  <NavResume
+                    to="Resume"
+                    duration={500}
+                    exact="true"
+                    offset={-80}
+                  >
+                    Vision
+                  </NavResume>
+                </NavItem>
+                <NavItem>
+                  <NavResume
+                    to="Resume"
+                    duration={500}
+                    exact="true"
+                    offset={-80}
+                  >
+                    Partner
+                  </NavResume>
+                </NavItem>
+                <NavItem>
+                  <NavResume
+                    to="Resume"
+                    duration={500}
+                    exact="true"
+                    offset={-80}
+                  >
+                    Support
+                  </NavResume>
+                </NavItem>
+                <NavItem>
+                  <NavResume
+                    to="Resume"
+                    duration={500}
+                    exact="true"
+                    offset={-80}
+                  >
+                    Blog
+                  </NavResume>
+                </NavItem>
+                <NavBtn>
+                  <NavBtnLink to="HireMe">Contact</NavBtnLink>
+                </NavBtn>
+              </NavMenu>
+            </NavBarContainter>
+          </Nav>
+        </IconContext.Provider>
+      </>
     );
 }
 

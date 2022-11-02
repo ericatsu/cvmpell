@@ -26,7 +26,7 @@ const Services = () => {
                     <ServicesIcon src={other} />
                     <ServicesH2>Others</ServicesH2>
                     <ServicesP>We offer other services as well. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quo sint porro, eligendi animi sit voluptas magni obcaecati, distinctio id necessitatibus molestias velit non nesciunt omnis recusandae reprehenderit corrupti quaerat perferendis?</ServicesP>
+                        Quo sint porro, eligendi </ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

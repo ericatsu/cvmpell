@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 //import { homeObjOne, homeObjThree, homeObjTwo } from '../components/Data';
 import Message from '../components/Message';
 import Clothing from '../components/Clothing';
+import Vision from '../components/Vision';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -21,19 +22,21 @@ const Home = () => {
 
 
     return (
-        <>
-        <SideBar isOpen={isOpen} toggle={toggle}/>
-        <NavBar toggle={toggle}/>
+      <>
+        <SideBar isOpen={isOpen} toggle={toggle} />
+        <NavBar toggle={toggle} />
         <Hero />
         {/* <About {...homeObjOne}/>
         <Skills {...homeObjTwo} /> */}
+        {/* add responsiveness */}
         <Message />
+        <Vision />
         <Clothing />
-        <Services />
+        {/* <Services /> */}
         {/* <Works {...homeObjThree}/> */}
         <Footer />
-        </>
-    )
+      </>
+    );
 }
 
 export default Home

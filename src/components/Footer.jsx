@@ -8,10 +8,11 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join the Adventure newsletter to receive our best vacation deals
+          Join the Adventure newsletter for daily updates
         </p>
         <p className="footer-subscription-text">
-          You can unsubscribe at any time.
+          Sign up for our email newsletter for inspirational contents and stay
+          connected with Cvmpell.
         </p>
         <div className="input-areas">
           <form>
@@ -29,27 +30,27 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
+            <Link to="/sign-up">Vision</Link>
             <Link to="/">Testimonials</Link>
             <Link to="/">Careers</Link>
-            <Link to="/">Investors</Link>
-            <Link to="/">Terms of Service</Link>
+            <Link to="/">Partners</Link>
+            <Link to="/">Media</Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
             <Link to="/">Contact</Link>
             <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
+            <Link to="/">Location</Link>
             <Link to="/">Sponsorships</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
-            <h2>Videos</h2>
-            <Link to="/">Submit Video</Link>
-            <Link to="/">Ambassadors</Link>
+            <h2>Contents</h2>
+            <Link to="/">Women</Link>
+            <Link to="/">Youth</Link>
+            <Link to="/">Others</Link>
             <Link to="/">Agency</Link>
-            <Link to="/">Influencer</Link>
           </div>
           <div class="footer-link-items">
             <h2>Social Media</h2>
@@ -64,11 +65,10 @@ function Footer() {
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" className="social-logo">
-              TRVL
-              <i class="fab fa-typo3" />
+              Cvmpell
             </Link>
           </div>
-          <small class="website-rights">TRVL © 2020</small>
+          <small class="website-rights">Cvmpell © 2022</small>
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"

@@ -1,62 +1,95 @@
 import styled from "styled-components";
 
-export const MainDiv = styled.div`
-    float: left;
+
+export const MainDiv = styled.section`
+  padding: 60px;
+`;
+
+export const MainCon = styled.div`
+  padding: 0px 15px;
+  //width: 1140px;
+  margin: auto;
+`
+
+export const TopDiv = styled.div`
+  text-align: center;
+  margin-bottom: 40px;
+
+`;
+
+export const SubTitle = styled.h6`
+  font-size: 1rem;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 20px;
+`
+
+export const Highlight = styled.h2`
+  font-size: 2rem;
+
+  @media screen and (max-width: 992px) {
+    font-size: 1.5rem;
+  }
+`;
+
+export const ItemWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+`
+
+export const Item = styled.div`
+  background: green;
+  width: 25%;
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  @media screen and (max-width: 992px) {
+    width: 39%;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 47.7%;
+  }
+
+  @media screen and (max-width: 576px) {
     width: 100%;
-    padding: 50px 0px;
-`
+    
+  }
+`;
 
-export const RowDiv = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-`
+export const MessageIcon = styled.span`
+  width: 60px;
+  height: 60px;
+  display: flex;
+  margin: auto;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+`;
 
-export const LeftBlock = styled.div`
-    width: 50%;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    align-content: center;
-    padding: 80px 50px;
-    border-radius: 5px;
-    overflow: hidden;
 
-`
+export const Title = styled.h3`
+  color: pink;
+  font-style: 2rem;
 
-export const RightBlock = styled.div`
-    width: 50%;
-    float: left;
-    margin-bottom: 0;
-`
-export const RowC = styled.div`
-    padding-right: 0;
-`
-export const RowItems = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-`
-export const ColImage = styled.div`
-    background: black;
-    display: flex;
-    flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+`;
 
-    @media (min-width: 768px){
-    flex: 0 0 50%;
-    max-width: 50%
-    }
-`
-export const ColText = styled.div`
-    background: #f5f5f5;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -ms-flexbox;
-    display: flex;
-
-    @media (min-width: 768px){
-    flex: 0 0 50%;
-    max-width: 50%
-    }
-`
-
+export const Description = styled.p`
+   color: yellow;
+   line-height: 30px;
+   font-size: .9rem;
+`;

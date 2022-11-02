@@ -1,36 +1,68 @@
 import React from "react";
-import { ColImage, ColText, LeftBlock, MainDiv, RightBlock, RowC, RowDiv, RowItems } from "../elements/MessageElement";
+import { Description, Highlight, Item, ItemWrap, MainCon, MainDiv, MessageIcon, SubTitle, Title, TopDiv } from "../elements/MessageElement";
 //import Card from "./Card";
 import "../elements/Message.css"
-// import HeartEmoji from "../assets/images/heartemoji.png";
-// import Glasses from "../assets/images/glasses.png";
-// import Humble from "../assets/images/humble.png";
-// import { motion } from "framer-motion";
+import { Button } from "../elements/ButtonElements";
 
-const Message = () => {
-
-//  transition
+const Message = ({ primary, dark, dark2 }) => {
+  const messageData = [
+    {
+      icon: "ri-html5-fill",
+      title: "Some Title",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. qui libero dolorem modi architecto adipisci sed nihil voluptate",
+    },
+    {
+      icon: "ri-html5-fill",
+      title: "Some Title",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. qui libero dolorem modi architecto adipisci sed nihil voluptate",
+    },
+    {
+      icon: "ri-html5-fill",
+      title: "Some Title",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. qui libero dolorem modi architecto adipisci sed nihil voluptate",
+    },
+    {
+      icon: "ri-html5-fill",
+      title: "Some Title",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. qui libero dolorem modi architecto adipisci sed nihil voluptate",
+    },
+  ];
 
   return (
-    <section>
     <MainDiv>
-    <RowDiv>
-      <LeftBlock>lpoy</LeftBlock>
-      <RightBlock>
-        <RowC>
-          <RowItems>
-            <ColImage>vg</ColImage>
-            <ColText>Somt</ColText>
-          </RowItems>
-          <RowItems>
-            <ColText>lokm</ColText>
-            <ColImage>g</ColImage>
-          </RowItems>
-        </RowC>
-      </RightBlock>
-    </RowDiv>
+      <MainCon>
+        <TopDiv>
+          <SubTitle>Our Inspiration</SubTitle>
+          <Highlight>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            ea!
+          </Highlight>
+        </TopDiv>
+
+        <ItemWrap>
+          {messageData.map((item, index) => (
+            <Item key={index}>
+              <MessageIcon>
+                <i class={item.icon}></i>
+              </MessageIcon>
+              <Title>{item.title}</Title>
+              <Description>{item.desc}</Description>
+              <Button
+                to="About"
+                duration={500}
+                exact="true"
+                offset={-80}
+                primary={primary ? 1 : 0}
+                dark={dark ? 1 : 0}
+                dark2={dark2 ? 1 : 0}
+              >
+                Learn More
+              </Button>
+            </Item>
+          ))}
+        </ItemWrap>
+      </MainCon>
     </MainDiv>
-    </section>
   );
 };
 
