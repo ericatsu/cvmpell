@@ -33,7 +33,6 @@ export const Highlight = styled.h6`
 
 export const ItemWrap = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
   column-gap: 2rem;
 
