@@ -11,12 +11,11 @@ const Home = () => {
 
     return (
       <>
-        
         <Hero />
         <Message />
         <Vision />
         <Clothing />
-        <Blog/>
+        <Blog />
       </>
     );
 }

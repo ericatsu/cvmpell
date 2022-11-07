@@ -38,7 +38,7 @@ export default function Blog() {
     <Section id="blogs">
       <div className="title">
         <h2>Our Blog</h2>
-        <h5>Where you can earn crypto</h5>
+        <h5>Read Latest news of Cvmpbell</h5>
       </div>
       <div className="blogs">
         {blogData.map((item, index) => {
@@ -71,11 +71,13 @@ const Section = styled.section`
     gap: 0.3rem;
   }
   .blogs {
-    display: flex;
+    display: grid;
     column-gap: 2rem;
     justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     .blog {
       display: flex;
+      cursor: pointer;
       align-items: center;
       gap: 1rem;
       flex-direction: column;
@@ -87,7 +89,6 @@ const Section = styled.section`
       }
       img {
         width: 100%;
-        //height: 30%;
       }
       .data {
         padding: 1rem;
@@ -110,23 +111,15 @@ const Section = styled.section`
       }
     }
     .blogs {
+      grid-template-columns: 1fr 1fr;
       flex-direction: column;
       gap: 2rem;
-    }
-    .blog {
-      width: 39%;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .blog {
-      width: 47.7%;
-    }
-  }
-
-  @media screen and (max-width: 576px) {
-    .blog {
-      width: 47.7%;
+    .blogs {
+      grid-template-columns: 1fr;
     }
   }
 `;
