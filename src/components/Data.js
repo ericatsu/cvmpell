@@ -12,5 +12,5 @@ export const clothObj = {
     alt: 'clothing line',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
 }
