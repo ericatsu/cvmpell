@@ -12,8 +12,8 @@ const Home = () => {
     return (
       <>
         <Hero />
-        <Message />
         <Vision />
+        <Message />
         <Clothing />
         <Blog />
       </>

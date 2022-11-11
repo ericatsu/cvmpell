@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import {
+  MdArrowForward,
+  MdPageview,
+} from "react-icons/md";
 
 export const VSection = styled.section`
   padding: 60px;
@@ -78,11 +82,46 @@ export const VTitle = styled.h4`
   font-weight: 500;
 `
 
-export const VDImg = styled.div`
+export const VLeft = styled.div`
   width: 50%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
+  }
+`;
+
+export const VBtnWrap = styled.div`
+  //display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 94%;
+  }
+`;
+
+export const VBtn = styled.button`
+  border-radius: 5px;
+  background: #f5c32c;
+  white-space: nowrap;
+  padding: 10px;
+  width: 100%;
+  color: #010606;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #f5c32c;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
   }
 `;
 
@@ -96,5 +135,15 @@ export const VImg = styled.img`
   @media screen and (max-width: 768px) {
     height: 400px !important;
   }
+`;
+
+export const VArrowForward = styled(MdPageview)`
+  margin-left: 4px;
+  font-size: 20px;
+`;
+
+export const VArrowRight = styled(MdArrowForward)`
+  margin-left: 4px;
+  font-size: 20px;
 `;
 

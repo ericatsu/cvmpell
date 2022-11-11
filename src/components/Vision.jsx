@@ -1,7 +1,9 @@
+import React, {useState} from 'react'
 import { Description } from "../elements/MessageElement";
-import { VContainer, VContent, VDescription, VDImg, Vh2, VIcons, VImg, VItem, VItemWrapper, VSection, VSubTitle, VTitle, VWrapper } from "../elements/VisionElement";
+import { VArrowForward, VArrowRight, VBtn, VBtnWrap, VContainer, VContent, VDescription, Vh2, VIcons, VImg, VItem, VItemWrapper, VLeft, VSection, VSubTitle, VTitle, VWrapper } from "../elements/VisionElement";
 import genders from '../assets/images/genders.jpg';
 import { FaApple } from "react-icons/fa";
+import { ArrowForward, ArrowRight } from '../elements/HeroElements';
 
 const visionData = [
   {
@@ -26,6 +28,12 @@ const visionData = [
   },
 ];
 const Vision = () => {
+  const [hover, sethover] = useState(false);
+
+  const onHover = () => {
+    sethover(!hover);
+  };
+
     return (
       <VSection>
         <VContainer>
@@ -51,9 +59,14 @@ const Vision = () => {
                 ))}
               </VItemWrapper>
             </VContent>
-            <VDImg>
+            <VLeft>
               <VImg src={genders} />
-            </VDImg>
+              <VBtnWrap>
+                <VBtn onMouseEnter={onHover} onMouseLeave={onHover}>
+                  View Shop {hover ? <VArrowForward /> : <VArrowRight />}
+                </VBtn>
+              </VBtnWrap>
+            </VLeft>
           </VWrapper>
         </VContainer>
       </VSection>
