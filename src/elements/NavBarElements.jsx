@@ -71,21 +71,8 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
    height: 80px;
 `
-export const NavLinks = styled(LinkS)`
-   color: #fff;
-   display: flex;
-   align-items: center;
-   text-align: none;
-   text-decoration: none;
-   padding: 0 1rem;
-   height: 100%;
-   cursor: pointer;
 
-   &.active{
-     border-bottom: 3px solid #F5C32C;
-   }
-`
-export const NavResume = styled(LinkR)`
+export const NavPage = styled(LinkR)`
    color: #fff;
    display: flex;
    align-items: center;
@@ -96,7 +83,7 @@ export const NavResume = styled(LinkR)`
    cursor: pointer;
    font-size: 1.3rem;
 
-   &.active{
+   &:hover{
      border-bottom: 3px solid #F5C32C;
    }
 `
@@ -110,9 +97,9 @@ export const NavBtn = styled.nav`
   }
 `
 
-export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #F5C32C;
+export const NavBtnLink = styled(LinkS)`
+  border-radius: 5px;
+  background: #f5c32c;
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
@@ -123,9 +110,9 @@ export const NavBtnLink = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  &:hover{
-      transition: all 0.2s ease-in-out;
-      background: #fff;
-      color: #F5C32C;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #f5c32c;
   }
-`
+`;

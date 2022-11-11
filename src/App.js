@@ -8,6 +8,9 @@ import SideBar from '../src/pages/SideBar';
 import NavBar from '../src/pages/NavBar';
 
 import Footer from '../src/pages/Footer';
+import ShopPage from './ecommerce/shop/ShopPage';
+import BlogPage from './pages/BlogPage';
+import PartnerPage from './pages/PartnerPage';
 
 
 
@@ -25,6 +28,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/AboutUs" element={<AboutUs/>} />
+          <Route exact path="/ShopPage" element={<ShopPage/>} />
+          <Route exact path="/PartnerPage" element={<PartnerPage/>} />
+          <Route exact path="/BlogPage" element={<BlogPage/>} />
         </Routes>
         <Footer />
     </Router>

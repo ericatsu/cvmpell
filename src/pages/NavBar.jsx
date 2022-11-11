@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
-import { Nav, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavResume,  NavBarContainter} from '../elements/NavBarElements';
+import { Nav, NavLogo, MobileIcon, NavMenu, NavItem, NavBtn, NavBtnLink, NavPage,  NavBarContainter} from '../elements/NavBarElements';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 import navlogo from "../assets/images/navlogo.png";
@@ -38,57 +38,61 @@ const NavBar = ( {toggle} ) => {
               </MobileIcon>
               <NavMenu>
                 <NavItem>
-                  <NavResume
-                    to="Resume"
+                  <NavPage
+                    to="ShopPage"
                     duration={500}
-                    exact="true"
                     offset={-80}
                   >
-                    About Us
-                  </NavResume>
+                    Shop
+                  </NavPage>
                 </NavItem>
                 <NavItem>
-                  <NavResume
-                    to="Resume"
+                  <NavPage
+                    to="ShopPage"
                     duration={500}
-                    exact="true"
                     offset={-80}
                   >
-                    Vision
-                  </NavResume>
+                    BestSellers
+                  </NavPage>
                 </NavItem>
                 <NavItem>
-                  <NavResume
-                    to="Resume"
+                  <NavPage
+                    to="PartnerPage"
                     duration={500}
-                    exact="true"
                     offset={-80}
                   >
                     Partner
-                  </NavResume>
+                  </NavPage>
                 </NavItem>
                 <NavItem>
-                  <NavResume
-                    to="Resume"
+                  <NavPage
+                    to="BlogPage"
                     duration={500}
-                    exact="true"
-                    offset={-80}
-                  >
-                    Support
-                  </NavResume>
-                </NavItem>
-                <NavItem>
-                  <NavResume
-                    to="Resume"
-                    duration={500}
-                    exact="true"
                     offset={-80}
                   >
                     Blog
-                  </NavResume>
+                  </NavPage>
+                </NavItem>
+                <NavItem>
+                  <NavPage
+                    to="AboutUs"
+                    duration={500}
+                    offset={-80}
+                  >
+                    About Us
+                  </NavPage>
                 </NavItem>
                 <NavBtn>
-                  <NavBtnLink to="HireMe">Contact</NavBtnLink>
+                  <NavBtnLink
+                    to="Footer"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                  >
+                    Contact
+                  </NavBtnLink>
                 </NavBtn>
               </NavMenu>
             </NavBarContainter>
