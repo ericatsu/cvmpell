@@ -12,54 +12,42 @@ import {
   Column2,
   ImgWrap,
   Img,
-} from "../elements/AboutElements";
+} from "../elements/ClothingElements";
 import cloth from "../assets/images/cloth.svg";
 
-const Clothing = ({
-  lightBg,
-  id,
-  imgStart,
-  topLine,
-  lightText,
-  headline,
-  darkText,
-  description,
-  buttonLabel,
-  img,
-  alt,
-  primary,
-  dark,
-  dark2,
-}) => {
+const Clothing = () => {
   return (
-    <InfoContainer lightBg={lightBg} id={id}>
+    <InfoContainer>
       <InfoWrapper>
-        <InfoRow imgStart={imgStart}>
+        <InfoRow>
           <Column1>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
-              <Heading lightText={lightText}>{headline}</Heading>
-              <Subtitle darkText={darkText}>{description}</Subtitle>
+              <TopLine>'Lorem ipsum'</TopLine>
+              <Heading>'Sit amet consectetur'</Heading>
+              <Subtitle>
+                'Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequatur quas similique, doloribus architecto voluptates at
+                sapiente accusantium eius doloremque sit officiis. Dolorem
+                perspiciatis,'
+              </Subtitle>
               <BtnWrap>
                 <Button
-                  to="/"
+                  to="HireMe"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
-                  primary={primary ? 1 : 0}
-                  dark={dark ? 1 : 0}
-                  dark2={dark2 ? 1 : 0}
+                  alt="clothing line"
                 >
-                  {buttonLabel}
+                  View Merch
                 </Button>
               </BtnWrap>
             </TextWrapper>
           </Column1>
           <Column2>
             <ImgWrap>
-              <Img src={cloth} alt={alt} />
+              <Img src={cloth} alt="clothing line" />
             </ImgWrap>
           </Column2>
         </InfoRow>
