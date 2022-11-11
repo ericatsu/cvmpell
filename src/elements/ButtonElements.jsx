@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Button = styled(Link)`
-  border-radius: 50px;
+  border-radius: 5px;
   background: ${({primary}) => (primary ? '#F5C32C' : '#010606')};
   white-space: nowrap;
   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
