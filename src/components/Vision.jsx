@@ -1,9 +1,7 @@
 import React, {useState} from 'react'
-import { Description } from "../elements/MessageElement";
-import { VArrowForward, VArrowRight, VBtn, VBtnWrap, VContainer, VContent, VDescription, Vh2, VIcons, VImg, VItem, VItemWrapper, VLeft, VSection, VSubTitle, VTitle, VWrapper } from "../elements/VisionElement";
+import { VArrowForward, VArrowRight, VBtn, VBtnWrap, VContainer, VContent, VDes, VDescription, Vh2, VIcons, VImg, VItem, VItemWrapper, VLeft, VSection, VSubTitle, VTitle, VWrapper } from "../elements/VisionElement";
 import genders from '../assets/images/genders.jpg';
 import { FaApple } from "react-icons/fa";
-import { ArrowForward, ArrowRight } from '../elements/HeroElements';
 
 const visionData = [
   {
@@ -53,7 +51,7 @@ const Vision = () => {
                     <VIcons>{item.icon}</VIcons>
                     <div>
                       <VTitle>{item.title}</VTitle>
-                      <Description>{item.desc}</Description>
+                      <VDes>{item.desc}</VDes>
                     </div>
                   </VItem>
                 ))}

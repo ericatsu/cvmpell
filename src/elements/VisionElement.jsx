@@ -137,6 +137,12 @@ export const VImg = styled.img`
   }
 `;
 
+export const VDes = styled.p`
+  color: black;
+  line-height: 30px;
+  font-size: 0.9rem;
+`;
+
 export const VArrowForward = styled(MdPageview)`
   margin-left: 4px;
   font-size: 20px;
