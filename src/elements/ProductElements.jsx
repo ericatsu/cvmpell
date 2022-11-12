@@ -10,7 +10,7 @@ export const MainDiv = styled.section`
 export const MainCon = styled.div`
   min-height: 100vh;
   padding: 4rem calc((100vw - 1300px) / 2);
-  background: #788097;
+  background: #fff;
   color: #150f0f;
 `;
 
