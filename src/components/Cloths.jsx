@@ -1,23 +1,46 @@
-import React from "react";
-import { Description, Highlight, ProductCard, ProductWrap, MainCon, ProductImg, SubTitle, Title, TopDiv, ProductInfo, ProductBtnLink, ProductLink, ProductBtn } from "../elements/ProductElements";
-import genders from "../assets/images/genders.jpg";
+import React from 'react'
+import {
+  Description,
+  Highlight,
+  ProductCard,
+  ProductWrap,
+  MainCon,
+  ProductImg,
+  SubTitle,
+  Title,
+  TopDiv,
+  ProductInfo,
+  ProductBtnLink,
+  ProductLink,
+  ProductBtn,
+} from "../elements/ProductElements";
+import clothimg from "../assets/images/clothimg.png";
 
-const Products = () => {
+const Cloths = () => {
   const productsData = [
     {
-      img: genders,
-      title: "Some Title",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      img: clothimg,
+      title: "Tops",
     },
     {
-      img: genders,
-      title: "Some Title",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      img: clothimg,
+      title: "Downs",
     },
     {
-      img: genders,
-      title: "Some Title",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      img: clothimg,
+      title: "Somethings",
+    },
+    {
+      img: clothimg,
+      title: "Tops",
+    },
+    {
+      img: clothimg,
+      title: "Downs",
+    },
+    {
+      img: clothimg,
+      title: "Somethings",
     },
   ];
 
@@ -50,4 +73,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Cloths;

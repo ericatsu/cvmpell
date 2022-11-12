@@ -1,9 +1,9 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Clothing from '../components/Clothing';
-import Vision from '../components/Vision';
-import Blog from '../components/Blog';
+import Feature from '../components/Feature';
+//import Vision from '../components/Vision';
 import Products from '../components/Products';
+import Cloths from '../components/Cloths';
 
 const Home = () => {
     
@@ -12,10 +12,10 @@ const Home = () => {
     return (
       <>
         <Hero />
-        <Vision />
+        {/* <Vision /> */}
         <Products />
-        <Clothing />
-        <Blog />
+        <Feature />
+        <Cloths />
       </>
     );
 }
