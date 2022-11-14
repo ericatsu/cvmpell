@@ -6,11 +6,11 @@ import AboutUs from './pages/AboutUs';
 import { useState } from 'react';
 import SideBar from '../src/pages/SideBar';
 import NavBar from '../src/pages/NavBar';
-
 import Footer from '../src/pages/Footer';
 import ShopPage from './ecommerce/shop/ShopPage';
 import BlogPage from './pages/BlogPage';
 import PartnerPage from './pages/PartnerPage';
+import Faqs from './pages/Faqs';
 
 
 
@@ -31,6 +31,7 @@ function App() {
           <Route exact path="/ShopPage" element={<ShopPage/>} />
           <Route exact path="/PartnerPage" element={<PartnerPage/>} />
           <Route exact path="/BlogPage" element={<BlogPage/>} />
+          <Route exact path="/Faqs" element={<Faqs />} />
         </Routes>
         <Footer />
     </Router>

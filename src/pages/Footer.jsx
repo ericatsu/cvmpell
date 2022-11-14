@@ -20,7 +20,7 @@ function Footer() {
           <p>Accra</p>
           <p>Some Building</p>
           <p>4th Floor</p>
-          <p className="email-id">email@email.com</p>
+          <p className="email-id" type='email'>email@email.com</p>
           <h4>+233 589 679 5798</h4>
         </div>
         <div className="col">
@@ -32,25 +32,28 @@ function Footer() {
           </h3>
           <ul>
             <li>
-              <a href="/">My Account</a>
+              <a href="/PartnerPage">Contact</a>
             </li>
             <li>
-              <a href="/">Promotions</a>
+              <a href="/AboutUs">About Us</a>
             </li>
             <li>
-              <a href="/">Wish List</a>
+              <a href="/">Delivery & Returns</a>
+            </li>
+            <li>
+              <a href="/">Blog</a>
             </li>
             <li>
               <a href="/">Terms & Condition</a>
             </li>
             <li>
-              <a href="/">Faq's</a>
+              <a href="/Faqs">Faq's</a>
             </li>
           </ul>
         </div>
         <div className="col">
           <h3>
-            Newsletter{" "}
+            Newsletter
             <div className="underline">
               <span />
             </div>

@@ -36,9 +36,9 @@ const NavBar = ( {toggle} ) => {
               <MobileIcon onClick={toggle}>
                 <FaBars />
               </MobileIcon>
-              <NavMenu>
+              <NavMenu >
                 <NavItem>
-                  <NavPage
+                  <NavPage scrollNav={scrollNav}
                     to="ShopPage"
                     duration={500}
                     offset={-80}
@@ -47,7 +47,7 @@ const NavBar = ( {toggle} ) => {
                   </NavPage>
                 </NavItem>
                 <NavItem>
-                  <NavPage
+                  <NavPage scrollNav={scrollNav}
                     to="ShopPage"
                     duration={500}
                     offset={-80}
@@ -56,30 +56,12 @@ const NavBar = ( {toggle} ) => {
                   </NavPage>
                 </NavItem>
                 <NavItem>
-                  <NavPage
-                    to="PartnerPage"
-                    duration={500}
-                    offset={-80}
-                  >
-                    Partner
-                  </NavPage>
-                </NavItem>
-                <NavItem>
-                  <NavPage
-                    to="BlogPage"
-                    duration={500}
-                    offset={-80}
-                  >
-                    Blog
-                  </NavPage>
-                </NavItem>
-                <NavItem>
-                  <NavPage
+                  <NavPage scrollNav={scrollNav}
                     to="AboutUs"
                     duration={500}
                     offset={-80}
                   >
-                    About Us
+                    Cart
                   </NavPage>
                 </NavItem>
                 <NavBtn>

@@ -72,8 +72,8 @@ export const NavItem = styled.li`
    height: 80px;
 `
 
-export const NavPage = styled(LinkR)`
-   color: #fff;
+export const NavPage = styled(LinkR)` 
+  color: ${({ scrollNav }) => (scrollNav ? '#000000' : '#ffffff')};
    display: flex;
    align-items: center;
    text-align: none;

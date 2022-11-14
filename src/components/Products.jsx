@@ -6,18 +6,18 @@ const Products = () => {
   const productsData = [
     {
       img: genders,
-      title: "Some Title",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "Tops",
+      desc: "Lorem ipsum dolor sit amet.",
     },
     {
       img: genders,
-      title: "Some Title",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "Downs",
+      desc: "Lorem ipsum dolor sit amet.",
     },
     {
       img: genders,
-      title: "Some Title",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "Accessories",
+      desc: "Lorem ipsum dolor sit amet.",
     },
   ];
 
