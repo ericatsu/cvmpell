@@ -11,23 +11,17 @@ const SideBar = ({isOpen, toggle}) => {
         <SidebarWrapper>
           <SidebarMenu>
             <SidebarLink to="ShopPage" onClick={toggle}>
-              About
+              Shop
             </SidebarLink>
             <SidebarLink to="ShopPage" onClick={toggle}>
-              Skills
+              BestSellers
             </SidebarLink>
-            <SidebarLink to="PartnerPage" onClick={toggle}>
-              Service
-            </SidebarLink>
-            <SidebarLink to="BlogPage" onClick={toggle}>
-              Works
-            </SidebarLink>
-            <SidebarLink to="Resume" onClick={toggle}>
-              Resume
+            <SidebarLink to="ShopPage" onClick={toggle}>
+              Cart
             </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to="Footer">Contact</SidebarRoute>
+            <SidebarRoute to="Footer">Log In</SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>
       </SidebarContainer>

@@ -57,7 +57,7 @@ const NavBar = ( {toggle} ) => {
                 </NavItem>
                 <NavItem>
                   <NavPage scrollNav={scrollNav}
-                    to="AboutUs"
+                    to="ShopPage"
                     duration={500}
                     offset={-80}
                   >
