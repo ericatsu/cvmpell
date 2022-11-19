@@ -33,33 +33,33 @@ export const Highlight = styled.h6`
   }
 `;
 
-export const ProductLink = styled(Link)`
+export const ClothLink = styled(Link)`
   text-decoration: none;
   color: #150f0f;
 `;
 
-export const ProductWrap = styled.div`
+export const ClothWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
 `;
 
-export const ProductCard = styled.div`
+export const ClothCard = styled.div`
   margin: 0 2rem;
   line-height: 1.5;
   width: 300px;
 `;
 
 
-export const ProductImg = styled.img`
+export const ClothImg = styled.img`
   height: 300px;
   min-width: 300px;
   max-width: 100%;
   box-shadow: 8px 8px #fdc500;
 `;
 
-export const ProductInfo = styled.div`
+export const ClothInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,14 +77,14 @@ export const Description = styled.p`
   margin-bottom: 1rem;
 `;
 
-export const ProductBtn = styled.button`
+export const ClothBtn = styled.button`
   display: flex;
   align-items: center;
   border: none;
   border-radius: 10px;
 `;
 
-export const ProductBtnLink = styled(Link)`
+export const ClothBtnLink = styled(Link)`
   font-size: 1.2rem;
   padding: 1rem 4rem;
   background: #ffc500;

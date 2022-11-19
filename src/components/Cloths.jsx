@@ -2,22 +2,22 @@ import React from 'react'
 import {
   Description,
   Highlight,
-  ProductCard,
-  ProductWrap,
+  ClothCard,
+  ClothWrap,
   MainCon,
-  ProductImg,
+  ClothImg,
   SubTitle,
   Title,
   TopDiv,
-  ProductInfo,
-  ProductBtnLink,
-  ProductLink,
-  ProductBtn,
-} from "../elements/ProductElements";
+  ClothInfo,
+  ClothBtnLink,
+  ClothLink,
+  ClothBtn,
+} from "../elements/ClothsElements";
 import clothimg from "../assets/images/clothimg.png";
 
 const Cloths = () => {
-  const productsData = [
+  const clothData = [
     {
       img: clothimg,
       title: "Tops",
@@ -53,22 +53,22 @@ const Cloths = () => {
         </Highlight>
       </TopDiv>
 
-      <ProductWrap>
-        {productsData.map((item, index) => (
-          <ProductLink to="ShopPage">
-            <ProductCard key={index}>
-              <ProductImg src={item.img} alt="cloth" />
-              <ProductInfo>
+      <ClothWrap>
+        {clothData.map((item, index) => (
+          <ClothLink to="ShopPage">
+            <ClothCard key={index}>
+              <ClothImg src={item.img} alt="cloth" />
+              <ClothInfo>
                 <Title>{item.title}</Title>
                 <Description>{item.desc}</Description>
-                <ProductBtn>
-                  <ProductBtnLink to="ShopPage">Shop Now</ProductBtnLink>
-                </ProductBtn>
-              </ProductInfo>
-            </ProductCard>
-          </ProductLink>
+                <ClothBtn>
+                  <ClothBtnLink to="ShopPage">Shop Now</ClothBtnLink>
+                </ClothBtn>
+              </ClothInfo>
+            </ClothCard>
+          </ClothLink>
         ))}
-      </ProductWrap>
+      </ClothWrap>
     </MainCon>
   );
 };

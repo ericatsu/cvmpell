@@ -39,7 +39,7 @@ const NavBar = ( {toggle} ) => {
               </MobileIcon>
               <NavMenu >
                 <NavItem>
-                  <NavPage scrollNav={scrollNav}
+                  <NavPage 
                     to="ShopPage"
                     duration={500}
                     offset={-80}
