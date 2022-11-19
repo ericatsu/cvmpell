@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {FaBars} from 'react-icons/fa'
-import { Nav, NavLogo, MobileIcon, NavMenu, NavItem, NavBtn, NavBtnLink, NavPage,  NavBarContainter} from '../elements/NavBarElements';
-import { IconContext } from 'react-icons/lib';
+import {FaBars, FaSearch} from 'react-icons/fa'
+import { Nav, NavLogo, MobileIcon, NavMenu, NavItem, NavBtn, NavBtnLink, NavPage,  NavBarContainter, SearchContainer, Input} from '../elements/NavBarElements';
+import { IconContext} from 'react-icons/lib';
+import { IoCartSharp  } from "react-icons/io5";
 import { animateScroll as scroll } from 'react-scroll';
 import navlogo from "../assets/images/navlogo.png";
 
@@ -31,7 +32,7 @@ const NavBar = ( {toggle} ) => {
           <Nav scrollNav={scrollNav}>
             <NavBarContainter>
               <NavLogo to="/" onClick={toggleHome}>
-                <img src={navlogo} alt="clothing line" />
+                <img src={navlogo} alt="clothing line" style={{size: '2rem'}}/>
               </NavLogo>
               <MobileIcon onClick={toggle}>
                 <FaBars />
@@ -47,22 +48,13 @@ const NavBar = ( {toggle} ) => {
                   </NavPage>
                 </NavItem>
                 <NavItem>
-                  <NavPage scrollNav={scrollNav}
-                    to="ShopPage"
-                    duration={500}
-                    offset={-80}
-                  >
-                    BestSellers
-                  </NavPage>
+                  <SearchContainer>
+            <Input type="text" placeholder='Search' style={{ border: 'none' }}/>
+            <FaSearch style={{ color: "white" }} />
+          </SearchContainer>
                 </NavItem>
                 <NavItem>
-                  <NavPage scrollNav={scrollNav}
-                    to="ShopPage"
-                    duration={500}
-                    offset={-80}
-                  >
-                    Cart
-                  </NavPage>
+                  <NavPage> <IoCartSharp/></NavPage>
                 </NavItem>
                 <NavBtn>
                   <NavBtnLink

@@ -26,7 +26,7 @@ export const NavBarContainter = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
+    max-width: 95%;
 `
 
 export const NavLogo = styled(LinkR)`
@@ -34,11 +34,9 @@ export const NavLogo = styled(LinkR)`
   justify-self: flex-start;
   cursor: pointer;
   display: flex;
-  margin-left: 24px;
+  margin-left: 20px;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.5rem;
-
 `;
 
 export const MobileIcon = styled.div`
@@ -58,10 +56,10 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
    display: flex;
-   align-items: center;
+   //align-items: center;
    list-style: none;
    text-align: center;
-   gap: 1.5rem;
+   gap: 1rem;
    
 
    @media screen and (max-width: 769px) {
@@ -115,4 +113,22 @@ export const NavBtnLink = styled(LinkS)`
     background: #fff;
     color: #f5c32c;
   }
+`;
+
+export const SearchContainer = styled.form`
+  border: 0.7px solid white;
+  display: flex;
+  align-items: center;
+  text-align: none;
+  margin-top: 22px;
+  //margin-left: 25px;
+  padding: 20px;
+  height: 50%;
+    color: ${({ scrollNav }) => (scrollNav ? '#000000' : '#ffffff')};
+
+`;
+
+export const Input = styled.input`
+  border: none;
+  //background-color: transparent;
 `;
