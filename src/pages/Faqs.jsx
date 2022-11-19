@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Accordion, AccordionContent, AccordionItem, AccordionTitle, FaqContainer, FaqTitle } from '../elements/FaqsElements';
+import { Accordion, AccordionContent, AccordionItem, AccordionTitle, AContainer, Address, FaqContainer, FaqTitle } from '../elements/FaqsElements';
 
 function Faqs() {
 
@@ -46,7 +46,7 @@ const AccordionFxn = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <AccordionItem>
+    <AccordionItem >
       <AccordionTitle onClick={() =>  setIsActive(!isActive)}>
         <div>{title}</div>
         <div>{isActive ? '-' : '+'}</div>
@@ -57,14 +57,21 @@ const AccordionFxn = ({ title, content }) => {
 };
 
   return (
-    <FaqContainer>
+    <AContainer >
       <FaqTitle>Frequently Asked Questions</FaqTitle>
+      <FaqContainer>
       <Accordion>
         {faqsData.map(({ title, content }) => (
           <AccordionFxn title={title} content={content} />
         ))}
- </Accordion>
+    </Accordion>
+    
+    <Address>
+      Find Us At
+    </Address>
     </FaqContainer>
+    </AContainer>
+    
   )
 }
 
